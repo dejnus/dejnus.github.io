@@ -364,7 +364,7 @@ form>.orange-filled{
 }
 ::placeholder {
     color: var(--dark-blue);
-    font-size: 0.75rem;
+    font-size: .8rem;
 }
 
 @media (max-width: 760px){
