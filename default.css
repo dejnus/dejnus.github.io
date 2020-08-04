@@ -7,7 +7,6 @@
 }
 html, body, p{
     margin: 0;
-    font-size: 8px;
 }
 a{
     text-decoration: none;
@@ -52,7 +51,7 @@ body{
 }
 .main-white{
     color: white;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin: 0;
     margin-bottom: 5px;
 }
@@ -182,14 +181,9 @@ body{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    gap: 50px;
-    margin-bottom: 100px;
-}
-@media (max-width: 760px){
-    .perk-boxes{
-        grid-template-columns: auto;
-    }
+    margin-top: 7rem;
+    gap: 3rem;
+    margin-bottom: 7rem;
 }
 .box{
     background-color: var(--background-grey);
@@ -213,16 +207,11 @@ body{
 .container-voucher{
     display: grid;
     grid-template-columns: auto auto;
-    gap: 50px;
+    gap: 3rem;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     padding: 2rem;
-}
-@media (max-width: 760px){
-    .container-voucher{
-        grid-template-columns: auto;
-    }
 }
 .round-image{
     display: block;
@@ -235,6 +224,8 @@ body{
     border-radius: 50%;
     height: 240px;
     width: 240px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text-voucher{
@@ -328,11 +319,6 @@ body{
     margin-right: auto;
     padding: 3rem;
 }
-@media (max-width: 760px){
-    .container-end{
-        grid-template-columns: auto;
-    }
-}
 .container-form>.blue-text{
     font-size: 1.25rem;
     font-weight: 700;
@@ -363,14 +349,6 @@ input[type=text]{
     height: 50px;
     margin: 6px 0;
 }
-@media (max-width: 760px){
-    .end-text-wrapper{
-        text-align: center;
-    }
-    .end-text-wrapper>.small-white{
-        width: 100%;
-    }
-}
 input[type=checkbox]{
     width: 16px;
     height: 16px;
@@ -386,4 +364,40 @@ form>.orange-filled{
 }
 ::placeholder {
     color: var(--dark-blue);
+}
+
+@media (max-width: 760px){
+    .end-text-wrapper{
+        text-align: center;
+    }
+    .end-text-wrapper>.small-white{
+        width: 100%;
+    }
+    .container-end{
+        grid-template-columns: auto;
+    }
+    .container-voucher{
+        grid-template-columns: auto;
+    }
+    .perk-boxes{
+        grid-template-columns: auto;
+    }
+    html{
+        font-size: 10px;
+    }
+    .text-wrapper-who{
+        width: 80%;
+    }
+    .container-voucher{
+        width: 80%;
+    }
+    .container-recommend{
+        width: 80%;
+    }
+    .container-decision{
+        width: 80%;
+    }
+    .container-end{
+        width: 80%;
+    }
 }
