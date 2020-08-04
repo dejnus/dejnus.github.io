@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="default.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
     <title>Lufthansa Landing Page</title>
 </head>
 <body>
@@ -18,8 +19,8 @@
                 <p class="main-white">na wycieczkę lub bilet lotniczy*</p>
             </div>
             <div class="wrapper-buttons">
-                <button class="orange-filled"><a href="#">UMÓW ROZMOWĘ</a></button>
-                <button class="orange-nofill">POZNAJ KORZYŚCI</button>
+                <button class="orange-filled" onclick="scrollToForm()">UMÓW ROZMOWĘ</button>
+                <button class="orange-nofill" onclick="scrollToWho()">POZNAJ KORZYŚCI</button>
             </div>      
             <p class="small-white">*voucher otrzymają wszystkie osoby rozpoczynające współpracę z Supertour Lufthansa City Center</p>
         </div>
@@ -88,7 +89,7 @@
                     <p class="box-text">Konferencje, wyjazdy motywacyjne oraz vouchery podróżne</p>
                 </div>
             </div>
-            <button class="orange-filled-blue-text">POROZMAWIAJMY</button>
+            <button class="orange-filled-blue-text" onclick="scrollToForm()">POROZMAWIAJMY</button>
         </div>
     </section>
     <section id="wrapper-voucher">
@@ -101,7 +102,7 @@
             </div>
             <div></div>
         </div>
-        <div class="button-voucher">
+        <div class="button-voucher" onclick="scrollToForm()">
             <button class="orange-filled-blue-text">ODBIERZ VOUCHER</button>
         </div>
     </section>
@@ -147,7 +148,7 @@
                         <input type="text" id="due" name="due" placeholder="Preferowany termin kontaktu"><br><br>
                         <input type="checkbox" id="agreement" name="agreement" value="agreed">
                         <label for="agreement">Zapoznałam/łem się z klauzulą informacyjną oraz dobrowolnie wyrażam zgodę na przetwarzanie moich danych osobowych przez PTH Supertour sp. z o.o. zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych („Ustawa”) i przepisami Ogólnego rozporządzenia o ochronie danych osobowych "RODO"</label>
-                        <input type="submit" value="Proszę o kontakt" class="orange-filled">
+                        <input type="submit" value="Proszę o kontakt" class="orange-filled-blue-text">
                       </form>
                 </div>
             </div>
